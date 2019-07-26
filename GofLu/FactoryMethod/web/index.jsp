@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +18,7 @@
   </head>
   <body>
       <h1>Tushig's Hot Oven Pizza</h1>
-      <img src="images/pizza.jpg" alt="Tushig's Hot Oven Pizza"/><br/>
+      <img src="resources/images/pizza.jpg" alt="Tushig's Hot Oven Pizza"/><br/>
       <p>This is our favorite recipe here at Tushig's Pizzas. It has been enjoyed by pizza fans for many years. </p>
   <fieldset>
           <label for="selPizza">Choose a pizza:</label>
