@@ -9,6 +9,11 @@ import java.io.IOException;
 public class PizzaController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().println("Your order is waiting.");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().println("Your order is ready.");
     }
 }
