@@ -14,6 +14,18 @@ public class PizzaController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("Your order is ready.");
+
+        String selected = req.getParameter("selPizza");
+
+        PizzaFactory factory = SimplePizzaFactory.getFactory();
+        Pizza pizza = factory.createPizza(selected);
+        resp.getWriter().println(pizza.getClass().getSimpleName());
+
+        //different from below on when the decision has to be made - runtime or compile time?
+        //which is one difference between framework and application development
+        //Pizza pizza1 = new CheesePizza();
+        //System.out.println(pizza.getClass().getSimpleName());
+
+
     }
 }

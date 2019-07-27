@@ -20,7 +20,8 @@
       <h1>Tushig's Hot Oven Pizza</h1>
       <img src="resources/images/pizza.jpg" alt="Tushig's Hot Oven Pizza"/><br/>
       <p>This is our favorite recipe here at Tushig's Pizzas. It has been enjoyed by pizza fans for many years. </p>
-  <fieldset>
+      <form method="post" action="pizza">
+        <fieldset>
           <label for="selPizza">Choose a pizza:</label>
           <select name="selPizza">
               <option value="cheese">Cheese pizza</option>
@@ -30,11 +31,12 @@
               
           </select>
           <label for="txtCount">How many:</label>
-          <input name="txtCount" size="2"/>
+          <input name="txtCount" value="1" size="2"/>
           <label for="txtOrderTotal">Order Total:</label>
           <input name="txtOrderTotal" readonly/>
           <input type="submit"/>
-  </fieldset
+        </fieldset
+      </form>
   
       <h2>LINKS</h2>
       <ul>
